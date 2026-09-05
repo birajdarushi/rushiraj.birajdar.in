@@ -90,11 +90,31 @@ export function Footer() {
       </div>
 
       <div className="ss-container mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 py-4 font-[family-name:var(--font-mono)] text-[11px] font-bold tracking-wide text-white/50">
-        <span>rushiraj-dev.fig</span>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <a
+            href={profile.emailHref}
+            className="text-white/50 no-underline hover:text-white"
+          >
+            {profile.email}
+          </a>
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            className="text-white/50 no-underline hover:text-white"
+          >
+            github.com/birajdarushi
+          </a>
+          <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="text-white/50 no-underline hover:text-white"
+          >
+            linkedin.com/in/rushirajbirajdar
+          </a>
+        </div>
         <span>© {new Date().getFullYear()} · Maharashtra, IN</span>
-        <Link href="/contact" className="text-white/35 no-underline hover:text-white/70">
-          contact
-        </Link>
       </div>
     </footer>
   )
