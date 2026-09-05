@@ -93,7 +93,7 @@ export function Skills() {
                 </div>
                 {cat.muted && (
                   <p className="mt-3 text-xs font-medium text-ink-faint">
-                    Actively building these — not yet production-ready.
+                    Actively building these, not yet production-ready.
                   </p>
                 )}
               </div>
@@ -107,7 +107,7 @@ export function Skills() {
               currently learning
             </p>
             <p className="mt-3 text-base font-medium text-ink-soft">
-              Building more reliable Playwright automation — without over-relying on AI.
+              Building more reliable Playwright automation, without over-relying on AI.
               Improving Go fundamentals. Exploring AI workflow validation and practical QA tooling.
             </p>
           </div>

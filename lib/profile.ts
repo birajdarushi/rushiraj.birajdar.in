@@ -1,5 +1,5 @@
 /**
- * Rushiraj Birajdar — profile content
+ * Rushiraj Birajdar - profile content
  */
 
 export const profile = {
@@ -11,7 +11,8 @@ export const profile = {
   emailHref: "mailto:rushiraj.birajdar@gmail.com",
   github: "https://github.com/birajdarushi",
   linkedin: "https://linkedin.com/in/rushirajbirajdar",
-  availability: "open to opportunities",
+  availability: "Automation Engineer at Bynry",
+  companyUrl: "https://bynry.com",
   heroClaim: "RELIABLE TEST SYSTEMS, BUILT TO SCALE.",
   heroClaimLines: ["RELIABLE TEST", "SYSTEMS, BUILT", "TO SCALE."] as const,
   heroTagline:
@@ -22,7 +23,7 @@ export const profile = {
     {
       role: "QA Automation Engineer",
       org: "Bynry Inc. / SMART360",
-      period: "September 2025 — Present",
+      period: "September 2025 - Present",
       detail:
         "Contributing to quality engineering for an enterprise SaaS platform by building automation, validating complex business workflows, and improving confidence across UI, API, and delivery pipelines.",
     },
@@ -72,14 +73,14 @@ export const profile = {
       code: "01",
       title: "End-to-End Automation",
       accent: "Python + Playwright.",
-      body: "I build maintainable automation suites around real user workflows — reusable Page Object Models, stable locators, fixtures, and meaningful reporting.",
+      body: "I build maintainable automation suites around real user workflows: reusable Page Object Models, stable locators, fixtures, and meaningful reporting.",
       tags: ["Playwright", "Pytest", "POM", "CI/CD"],
     },
     {
       code: "02",
       title: "API & Product Quality",
       accent: "Beyond the UI.",
-      body: "I validate API behavior, authentication, multi-tenant flows, contract checks, edge cases, and regression risk — not just what the screen shows.",
+      body: "I validate API behavior, authentication, multi-tenant flows, contract checks, edge cases, and regression risk, not just what the screen shows.",
       tags: ["API Testing", "Postman", "Swagger", "Contracts"],
     },
     {
@@ -96,7 +97,7 @@ export const profile = {
       slug: "htreeml",
       title: "htreeml",
       description:
-        "Open-source Chrome Extension and Node.js pipeline that captures live DOM snapshots — including dynamic UI changes — and turns them into AI-ready context for generating Playwright Page Object Model skeletons.",
+        "Open-source Chrome Extension and Node.js pipeline that captures live DOM snapshots, including dynamic UI changes, and turns them into AI-ready context for generating Playwright Page Object Model skeletons.",
       category: "tooling",
       tools: ["JavaScript", "Chrome Extension APIs", "Node.js", "Playwright", "GenAI"],
       cover_url: null,
@@ -114,7 +115,7 @@ export const profile = {
       slug: "umeed",
       title: "U.M.E.E.D.",
       description:
-        "Real-time disaster intelligence and information aggregation platform built for Smart India Hackathon 2024 — designed to bring fragmented, time-sensitive information into a more useful operational view.",
+        "Real-time disaster intelligence and information aggregation platform built for Smart India Hackathon 2024, designed to bring fragmented, time-sensitive information into a more useful operational view.",
       category: "product",
       tools: ["Azure", "Backend Services", "APIs", "OpenTelemetry", "Full-stack"],
       cover_url: null,
@@ -132,7 +133,7 @@ export const profile = {
       slug: "forseti",
       title: "Forseti Automation Framework",
       description:
-        "A scalable Python + Playwright quality automation framework for validating complex SaaS workflows across UI, APIs, and delivery environments — with CI/CD, cross-browser coverage, and quality gates.",
+        "A scalable Python + Playwright quality automation framework for validating complex SaaS workflows across UI, APIs, and delivery environments, with CI/CD, cross-browser coverage, and quality gates.",
       category: "automation",
       tools: ["Python", "Pytest", "Playwright", "Jenkins", "GitHub Actions", "BrowserStack", "SonarQube", "API Testing"],
       cover_url: null,

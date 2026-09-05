@@ -20,7 +20,7 @@ export function About() {
             </span>
             <p className="max-w-[36ch] font-[family-name:var(--font-display)] text-[clamp(1.35rem,2.4vw,2rem)] font-semibold leading-snug tracking-[-0.01em] text-ink">
               I&apos;m{" "}
-              <span className="text-brand">{profile.name}</span> — a QA Automation
+              <span className="text-brand">{profile.name}</span>, a QA Automation
               Engineer and final-year IT student from {profile.location.split(",")[0]} who
               treats every workflow like it has to{" "}
               <em className="font-[family-name:var(--font-wordmark)] not-italic">
@@ -35,8 +35,8 @@ export function About() {
               <span className="rounded-pill bg-ink px-3 py-1.5 font-[family-name:var(--font-mono)] text-[10px] font-bold uppercase tracking-wider text-white">
                 since training → live production
               </span>
-              <span className="rounded-pill border border-[var(--ss-line-2)] bg-soft px-3 py-1.5 font-[family-name:var(--font-mono)] text-[10px] font-bold uppercase tracking-wider text-ink-soft">
-                available now
+              <span className="rounded-pill border border-[var(--ss-line-2)] bg-soft px-3 py-1.5 text-[10px] font-bold tracking-wide text-ink-soft">
+                {profile.availability}
               </span>
             </div>
           </article>
@@ -91,7 +91,7 @@ export function About() {
               ))}
             </div>
             <p className="mt-4 text-sm font-medium text-ink-soft">
-              and more — Node.js, Next.js, Azure, AWS, OpenTelemetry, Chrome Extension APIs.
+              and more: Node.js, Next.js, Azure, AWS, OpenTelemetry, Chrome Extension APIs.
             </p>
           </article>
         </div>

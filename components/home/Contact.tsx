@@ -19,8 +19,7 @@ export function Contact() {
         <div className="mx-auto mt-10 max-w-xl">
           <p className="text-base font-medium text-ink-soft leading-relaxed">
             Interested in QA automation, developer tooling, or building reliable AI-enabled
-            workflows? I&apos;m currently open to opportunities where I can own systems — not just
-            test cases.
+            workflows? I like owning systems, not just test cases.
           </p>
 
           <div className="ss-cta-row mt-8 flex flex-wrap items-center justify-center gap-3">

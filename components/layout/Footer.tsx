@@ -30,10 +30,15 @@ export function Footer() {
           >
             GitHub
           </a>
-          <span className="inline-flex items-center justify-center gap-2 self-start rounded-pill border border-white/15 bg-white/5 px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-white/80">
+          <a
+            href={profile.companyUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 self-start rounded-pill border border-white/15 bg-white/5 px-3 py-2 text-[11px] font-bold tracking-wide text-white/80 no-underline"
+          >
             <span className="h-2 w-2 rounded-full bg-live" />
             {profile.availability}
-          </span>
+          </a>
         </div>
 
         <div className="mt-14 grid gap-8 sm:grid-cols-3">

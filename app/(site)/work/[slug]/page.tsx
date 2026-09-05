@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: Props) {
                 <dt>
                   <span className="ss-mono text-[10px] text-ink-faint">year</span>
                 </dt>
-                <dd>{project.year ?? "—"}</dd>
+                <dd>{project.year ?? "-"}</dd>
                 <dt>
                   <span className="ss-mono text-[10px] text-ink-faint">category</span>
                 </dt>

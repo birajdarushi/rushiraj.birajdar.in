@@ -40,7 +40,7 @@ export function Work() {
                     </div>
                   )}
                   <span className="absolute right-3 top-3 rounded bg-[var(--ss-frame)]/95 px-2 py-1 font-[family-name:var(--font-mono)] text-[10px] font-bold text-ink shadow-sm ring-1 ring-[var(--ss-line-2)]">
-                    {p.year ?? "—"}
+                    {p.year ?? "-"}
                   </span>
                 </div>
                 <div className="flex flex-1 flex-col p-5">

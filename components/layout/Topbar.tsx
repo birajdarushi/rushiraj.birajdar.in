@@ -34,9 +34,13 @@ export function Topbar() {
           href="/"
           className="ss-glass flex items-center gap-2 rounded-pill px-3 py-2 no-underline"
         >
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-brand text-sm font-bold text-white">
-            RB
-          </span>
+          <img
+            src="/bynry-favicon.png"
+            alt="Bynry"
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded-full bg-white object-contain"
+          />
           <span className="font-[family-name:var(--font-display)] text-sm font-bold text-ink">
             {profile.name.split(" ")[0]}
           </span>
@@ -58,10 +62,15 @@ export function Topbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <span className="ss-glass hidden items-center gap-2 rounded-pill px-3 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-soft lg:inline-flex">
+          <a
+            href={profile.companyUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="ss-glass hidden items-center gap-2 rounded-pill px-3 py-2 text-[11px] font-bold tracking-wide text-ink-soft no-underline lg:inline-flex"
+          >
             <span className="h-2 w-2 rounded-full bg-live shadow-live" />
             {profile.availability}
-          </span>
+          </a>
           <a
             href={profile.emailHref}
             className="ss-glass hidden rounded-pill px-3 py-2 font-[family-name:var(--font-mono)] text-[11px] font-bold text-ink no-underline xl:inline"

@@ -5,7 +5,7 @@ export async function GET() {
     profile.name.toUpperCase(),
     `${profile.location} | ${profile.email} | ${profile.github}`,
     `Title: ${profile.title}`,
-    `Availability: ${profile.availability}`,
+    `Role: ${profile.availability}`,
     "",
     "OBJECTIVE",
     profile.objective,
@@ -16,17 +16,17 @@ export async function GET() {
     "",
     "EXPERIENCE",
     ...profile.experience.flatMap((e) => [
-      `• ${e.role} — ${e.org} (${e.period})`,
+      `• ${e.role} - ${e.org} (${e.period})`,
       `  ${e.detail}`,
     ]),
     "",
     "EDUCATION",
     ...profile.education.map(
-      (e) => `• ${e.degree} — ${e.school}${e.meta ? ` (${e.meta})` : ""}`
+      (e) => `• ${e.degree} - ${e.school}${e.meta ? ` (${e.meta})` : ""}`
     ),
     "",
     "PROJECTS",
-    ...profile.projects.map((p) => `• ${p.title} — ${p.description.substring(0, 80)}...`),
+    ...profile.projects.map((p) => `• ${p.title} - ${p.description.substring(0, 80)}...`),
     "",
     "CONTACT",
     `Email: ${profile.email}`,
