@@ -32,16 +32,16 @@ export function Topbar() {
       <div className="ss-container flex items-center justify-between gap-3">
         <Link
           href="/"
-          className="ss-glass flex items-center gap-2 rounded-pill px-3 py-2 no-underline"
+          className="ss-glass flex items-center rounded-full p-1.5 no-underline"
+          aria-label={profile.name}
         >
           <img
-            src="/bynry-header-logo.webp"
-            alt="Bynry"
-            className="h-7 w-auto"
+            src="/rb-mark.svg"
+            alt=""
+            width={32}
+            height={32}
+            className="h-8 w-8"
           />
-          <span className="font-[family-name:var(--font-display)] text-sm font-bold text-ink">
-            {profile.name.split(" ")[0]}
-          </span>
         </Link>
 
         <nav
@@ -61,17 +61,8 @@ export function Topbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href={profile.companyUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="ss-glass hidden items-center gap-2 rounded-pill px-3 py-2 text-[11px] font-bold tracking-wide text-ink-soft no-underline lg:inline-flex"
-          >
-            <span className="h-2 w-2 rounded-full bg-live shadow-live" />
-            {profile.availability}
-          </a>
-          <a
             href={profile.emailHref}
-            className="ss-glass hidden rounded-pill px-3 py-2 font-[family-name:var(--font-mono)] text-[11px] font-bold text-ink no-underline xl:inline"
+            className="ss-glass hidden rounded-pill px-3 py-2 font-[family-name:var(--font-mono)] text-[11px] font-bold text-ink no-underline md:inline"
           >
             {profile.email}
           </a>

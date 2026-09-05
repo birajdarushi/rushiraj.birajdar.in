@@ -5,12 +5,23 @@ import { LiquidDotType } from "@/components/ui/LiquidDotType"
 export function Hero() {
   return (
     <section className="relative z-10 flex flex-col items-center px-4 pb-12 pt-[5.5rem] text-center sm:pb-16 sm:pt-28 md:min-h-[100svh] md:justify-center">
-      <div className="ss-glass mb-5 inline-flex max-w-full items-center gap-2 rounded-pill px-3 py-2 sm:mb-7 sm:px-4">
-        <span className="h-2 w-2 shrink-0 rounded-full bg-live shadow-live" />
+      <a
+        href={profile.companyUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="ss-glass mb-5 inline-flex max-w-full items-center gap-2 rounded-pill px-3 py-2 no-underline sm:mb-7 sm:px-4"
+      >
+        <img
+          src="/bynry-01.png"
+          alt=""
+          width={22}
+          height={22}
+          className="h-[22px] w-[22px] shrink-0"
+        />
         <span className="text-[10px] font-bold leading-tight tracking-wide text-ink sm:text-[11px]">
           {profile.availability}
         </span>
-      </div>
+      </a>
 
       <p className="ss-scribble">QA · Automation · Tooling</p>
 

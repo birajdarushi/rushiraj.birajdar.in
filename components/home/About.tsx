@@ -35,9 +35,6 @@ export function About() {
               <span className="rounded-pill bg-ink px-3 py-1.5 font-[family-name:var(--font-mono)] text-[10px] font-bold uppercase tracking-wider text-white">
                 since training → live production
               </span>
-              <span className="rounded-pill border border-[var(--ss-line-2)] bg-soft px-3 py-1.5 text-[10px] font-bold tracking-wide text-ink-soft">
-                {profile.availability}
-              </span>
             </div>
           </article>
 
