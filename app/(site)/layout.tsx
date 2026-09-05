@@ -12,7 +12,7 @@ export default function SiteLayout({
     <>
       <SkyDecor />
       <Topbar />
-      <main className="relative z-10">{children}</main>
+      <main className="relative z-10 overflow-x-hidden">{children}</main>
       <Footer />
     </>
   )

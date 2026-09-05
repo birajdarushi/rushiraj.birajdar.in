@@ -4,7 +4,7 @@ import { LiquidDotType } from "@/components/ui/LiquidDotType"
 
 export function Hero() {
   return (
-    <section className="relative z-10 flex flex-col items-center px-4 pb-12 pt-[5.5rem] text-center sm:pb-16 sm:pt-28 md:min-h-[100svh] md:justify-center">
+    <section className="relative z-10 flex flex-col items-center px-4 pb-8 pt-[5.25rem] text-center sm:pb-16 sm:pt-28 md:min-h-[100svh] md:justify-center">
       <a
         href={profile.companyUrl}
         target="_blank"

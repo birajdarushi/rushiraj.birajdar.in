@@ -79,21 +79,24 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 100%;
   color: var(--ss-ink);
   font-family: var(--font-body), system-ui, sans-serif;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
-  overflow-x: clip;
+  overflow-x: hidden;
+  max-width: 100%;
   background:
     radial-gradient(130% 95% at 82% -18%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 40%),
     radial-gradient(120% 80% at 10% 118%, rgba(196,230,255,0.75) 0%, rgba(196,230,255,0) 52%),
     linear-gradient(180deg, var(--ss-sky-0) 0%, var(--ss-sky-1) 40%, var(--ss-sky-2) 76%, var(--ss-sky-3) 100%);
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 ::selection { background: color-mix(in srgb, var(--ss-brand) 35%, white); color: var(--ss-ink); }
@@ -124,7 +127,7 @@ body {
 }
 
 .ss-container { width: min(100% - 1.5rem, 1200px); margin-inline: auto; }
-.ss-section { position: relative; z-index: var(--ss-z-content); padding-block: clamp(48px, 8vh, 140px); }
+.ss-section { position: relative; z-index: var(--ss-z-content); padding-block: clamp(48px, 8vh, 140px); overflow-x: hidden; }
 
 .ss-card { background: var(--ss-frame); border-radius: var(--radius-ss-xl); box-shadow: var(--ss-shadow-lg); border: 1px solid var(--ss-line-2); color: var(--ss-ink); }
 
@@ -182,13 +185,27 @@ a:focus-visible, button:focus-visible { outline: 2px solid color-mix(in srgb, va
   .ss-reveal--right { transform: translate3d(48px, 16px, 0); }
   .ss-reveal.is-in { transform: translate3d(0, 0, 0); }
   .ss-btn { padding: 0.875rem 1.35rem; }
+  body { min-height: 100vh; background-attachment: fixed; }
 }
 
 @media (max-width: 639px) {
+  html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
   .ss-cta-row { width: 100%; max-width: 20rem; flex-direction: column; align-items: stretch; }
   .ss-cta-row .ss-btn { width: 100%; }
   .ss-cloud-track:nth-child(n + 6) { display: none; }
   .ss-display { line-height: 0.98; }
+  .ss-section { padding-block: 32px; }
+  .ss-reveal--left,
+  .ss-reveal--right { transform: translate3d(0, 12px, 0); }
 }
 
 .bg-live { background-color: var(--ss-live); }
