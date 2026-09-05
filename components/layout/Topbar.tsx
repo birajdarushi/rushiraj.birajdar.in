@@ -35,11 +35,9 @@ export function Topbar() {
           className="ss-glass flex items-center gap-2 rounded-pill px-3 py-2 no-underline"
         >
           <img
-            src="/bynry-favicon.png"
+            src="/bynry-header-logo.webp"
             alt="Bynry"
-            width={32}
-            height={32}
-            className="h-8 w-8 rounded-full bg-white object-contain"
+            className="h-7 w-auto"
           />
           <span className="font-[family-name:var(--font-display)] text-sm font-bold text-ink">
             {profile.name.split(" ")[0]}
