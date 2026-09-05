@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal"
 
 export function Contact() {
   return (
-    <section className="ss-section pt-0">
+    <section className="ss-section pt-0" id="contact">
       <div className="ss-container text-center">
         <ScrollReveal from="left" delay={0}>
           <p className="ss-scribble">got an idea?</p>

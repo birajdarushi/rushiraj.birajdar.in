@@ -1,9 +1,6 @@
 import { profile } from "@/lib/profile"
 
-/**
- * Generates a clean text resume download
- */
-export function GET() {
+export async function GET() {
   const lines = [
     profile.name.toUpperCase(),
     `${profile.location} | ${profile.email} | ${profile.github}`,

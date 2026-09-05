@@ -55,18 +55,6 @@ export const metadata: Metadata = {
   },
 }
 
-function preventFlash() {
-  try {
-    const t = localStorage.getItem("rb-theme")
-    const d = window.matchMedia("(prefers-color-scheme: dark)").matches
-    const m = t === "dark" || (t !== "light" && d)
-    if (m) {
-      document.documentElement.classList.add("dark")
-      document.documentElement.dataset.theme = "dark"
-    }
-  } catch (e) {}
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -77,15 +65,9 @@ export default function RootLayout({
       lang="en"
       className={`${display.variable} ${body.variable} ${mono.variable} ${hand.variable} ${wordmark.variable}`}
       data-scroll-behavior="smooth"
+      data-theme="light"
       suppressHydrationWarning
     >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(${preventFlash.toString()})();`,
-          }}
-        />
-      </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
