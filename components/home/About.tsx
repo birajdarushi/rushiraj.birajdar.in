@@ -14,7 +14,7 @@ export function About() {
         />
 
         <div className="mt-12 grid gap-4 lg:grid-cols-12">
-          <article className="ss-card ss-sel relative p-7 lg:col-span-7">
+          <article className="ss-card ss-sel relative p-5 sm:p-7 lg:col-span-7">
             <span className="ss-mono absolute right-4 top-4 text-[9px] text-ink-faint">
               statement.txt
             </span>
@@ -41,7 +41,7 @@ export function About() {
             </div>
           </article>
 
-          <article className="ss-card relative overflow-hidden !bg-ink p-6 text-white lg:col-span-5 dark:!bg-[#0a121c] dark:ring-1 dark:ring-white/10">
+          <article className="ss-card relative overflow-hidden !bg-ink p-6 text-white lg:col-span-5">
             <span className="ss-mono absolute right-4 top-4 text-[9px] text-white/35">
               metrics
             </span>

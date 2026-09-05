@@ -8,10 +8,10 @@ export function Contact() {
       <div className="ss-container text-center">
         <ScrollReveal from="left" delay={0}>
           <p className="ss-scribble">got an idea?</p>
-          <h2 className="ss-display text-[clamp(2.6rem,7.4vw,5.5rem)] text-ink">
+          <h2 className="ss-display text-[clamp(1.85rem,8.4vw,5.5rem)] text-ink">
             Let&apos;s build something reliable.
           </h2>
-          <span className="ss-glass mt-4 inline-flex rounded-pill px-4 py-2 font-[family-name:var(--font-mono)] text-[11px] font-bold uppercase tracking-wider text-ink-soft">
+          <span className="ss-glass mt-4 inline-flex max-w-full rounded-pill px-3 py-2 text-center font-[family-name:var(--font-mono)] text-[10px] font-bold uppercase leading-snug tracking-wider text-ink-soft sm:px-4 sm:text-[11px]">
             QA Automation · Developer Tooling · AI-ready Workflows
           </span>
         </ScrollReveal>
@@ -23,7 +23,7 @@ export function Contact() {
             test cases.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <div className="ss-cta-row mt-8 flex flex-wrap items-center justify-center gap-3">
             <a href={profile.emailHref} className="ss-btn ss-btn-primary">
               Talk with me
               <span aria-hidden>→</span>

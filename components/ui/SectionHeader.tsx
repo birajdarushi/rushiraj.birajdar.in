@@ -20,7 +20,7 @@ export function SectionHeader({
   return (
     <div className={align === "center" ? "text-center" : "text-left"}>
       {scribble ? <p className="ss-scribble">{scribble}</p> : null}
-      <h2 className="ss-display text-[clamp(2.4rem,6.2vw,4.75rem)] text-ink">
+      <h2 className="ss-display text-[clamp(1.85rem,8vw,4.75rem)] text-ink">
         {parts.map((part, i) =>
           brandWord && part.toLowerCase() === brandWord.toLowerCase() ? (
             <span key={i} className="text-brand">
@@ -33,7 +33,7 @@ export function SectionHeader({
       </h2>
       {sub ? (
         <p
-          className={`mt-4 max-w-[36ch] text-base font-medium text-ink-soft sm:text-lg ${
+          className={`mt-3 max-w-[36ch] text-[15px] font-medium leading-relaxed text-ink-soft sm:mt-4 sm:text-lg ${
             align === "center" ? "mx-auto" : ""
           }`}
         >

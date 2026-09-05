@@ -50,8 +50,12 @@ export function LiquidDotType({ lines, className = "" }: Props) {
 
     function buildDots() {
       const dpr = Math.min(window.devicePixelRatio || 1, 2)
-      const cssW = Math.max(280, wrap!.clientWidth || 640)
-      const cssH = Math.max(240, Math.round(cssW * 0.46))
+      const cssW = Math.max(260, wrap!.clientWidth || 640)
+      const narrow = cssW < 640
+      const cssH = Math.min(
+        Math.max(narrow ? 148 : 220, Math.round(cssW * (narrow ? 0.34 : 0.38))),
+        narrow ? 190 : 360
+      )
       sizeRef.current = { w: cssW, h: cssH, dpr }
 
       canvas!.width = Math.floor(cssW * dpr)

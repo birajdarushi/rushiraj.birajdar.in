@@ -6,7 +6,7 @@ export function ProofStrip() {
     <section className="ss-section pt-0">
       <div className="ss-container">
         <ScrollReveal from="left" delay={0}>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:grid-cols-3">
             {profile.stats.map((s, i) => (
               <div
                 key={s.label}

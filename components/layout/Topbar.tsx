@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { ThemeToggle } from "@/components/theme/ThemeToggle"
 import { profile } from "@/lib/profile"
 
 const links = [
@@ -38,7 +37,7 @@ export function Topbar() {
           <span className="grid h-8 w-8 place-items-center rounded-full bg-brand text-sm font-bold text-white">
             RB
           </span>
-          <span className="hidden font-[family-name:var(--font-display)] text-sm font-bold text-ink sm:inline">
+          <span className="font-[family-name:var(--font-display)] text-sm font-bold text-ink">
             {profile.name.split(" ")[0]}
           </span>
         </Link>
@@ -59,7 +58,6 @@ export function Topbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <span className="ss-glass hidden items-center gap-2 rounded-pill px-3 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-soft lg:inline-flex">
             <span className="h-2 w-2 rounded-full bg-live shadow-live" />
             {profile.availability}

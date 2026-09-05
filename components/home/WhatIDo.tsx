@@ -21,7 +21,7 @@ export function WhatIDo() {
               from={i % 2 === 0 ? "left" : "right"}
               delay={80 + i * 120}
             >
-              <article className="ss-card ss-sel flex flex-col p-6">
+              <article className="ss-card ss-sel flex flex-col p-5 sm:p-6">
                 <span className="ss-mono text-[11px] text-brand">{s.code}</span>
                 <h3 className="mt-3 font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-ink">
                   {s.title}

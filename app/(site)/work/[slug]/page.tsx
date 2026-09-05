@@ -14,7 +14,7 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) notFound()
 
   return (
-    <div className="ss-container relative z-10">
+    <div className="ss-container relative z-10 pt-28 pb-16 sm:pt-32">
       <ScrollReveal from="left" delay={0}>
         <div className="max-w-[760px]">
           <p className="ss-mono text-[11px] text-ink-faint">

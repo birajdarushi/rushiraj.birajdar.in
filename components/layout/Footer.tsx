@@ -8,17 +8,17 @@ export function Footer() {
         className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#7cc4ff73] to-transparent"
         aria-hidden
       />
-      <div className="ss-container py-16">
+      <div className="ss-container py-12 sm:py-16">
         <p className="ss-mono text-[11px] text-brand">
           automating quality, one system at a time
         </p>
         <a
           href={profile.emailHref}
-          className="mt-3 inline-flex font-[family-name:var(--font-display)] text-[clamp(2rem,5.2vw,4rem)] font-bold leading-none tracking-[-0.03em] text-white no-underline transition hover:text-brand"
+          className="mt-3 block break-all font-[family-name:var(--font-display)] text-[clamp(1.35rem,6.4vw,4rem)] font-bold leading-[1.05] tracking-[-0.03em] text-white no-underline transition hover:text-brand"
         >
           {profile.email}
         </a>
-        <div className="mt-6 flex flex-wrap items-center gap-3">
+        <div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <a href={profile.emailHref} className="ss-btn ss-btn-primary">
             Let&apos;s talk
           </a>
@@ -26,11 +26,11 @@ export function Footer() {
             href={profile.github}
             target="_blank"
             rel="noreferrer"
-            className="ss-btn ss-btn-ghost !border-white/30 !text-white"
+            className="ss-btn ss-btn-ghost !border-white/30 !bg-transparent !text-white hover:!bg-white/10"
           >
             GitHub
           </a>
-          <span className="inline-flex items-center gap-2 rounded-pill border border-white/15 bg-white/5 px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-white/80">
+          <span className="inline-flex items-center justify-center gap-2 self-start rounded-pill border border-white/15 bg-white/5 px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-white/80">
             <span className="h-2 w-2 rounded-full bg-live" />
             {profile.availability}
           </span>

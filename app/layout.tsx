@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import {
   Bricolage_Grotesque,
   Fraunces,
@@ -6,7 +6,6 @@ import {
   Shantell_Sans,
   Space_Mono,
 } from "next/font/google"
-import { ThemeProvider } from "@/components/theme/ThemeProvider"
 import { profile } from "@/lib/profile"
 import "./globals.css"
 
@@ -55,6 +54,13 @@ export const metadata: Metadata = {
   },
 }
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  colorScheme: "light",
+  themeColor: "#5EAEEA",
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -68,9 +74,7 @@ export default function RootLayout({
       data-theme="light"
       suppressHydrationWarning
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
